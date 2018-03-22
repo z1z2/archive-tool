@@ -29,6 +29,25 @@ Archive files to zip/tar file
 - [x] archive node project to tar file
 - [x] support install node into node_modules
 
+**Node>8.6.0**
+
+## Install
+
+```bash
+npm install archive-tool
+```
+
+## Usage
+
+```js
+const Archive = require('archive-tool');
+const archive = new Archive({
+  source: ['src', 'lib', 'package.json'],
+  target: 'dist'
+});
+archive.zip();
+```
+
 ## License
 
 [MIT](LICENSE)

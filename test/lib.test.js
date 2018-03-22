@@ -28,7 +28,6 @@ describe('lib.test.js', () => {
       const archive = new Archive();
       expect(archive.config.cwd).to.be.equal(process.cwd());
       expect(archive.config.installNode).to.be.false;
-      expect(archive.config.installDeps.mode).to.equal('npm');
     });
     it('should set options test', () => {
       const archive = new Archive({
